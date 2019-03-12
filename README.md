@@ -8,7 +8,7 @@
 
 ## Screenshot
 
-[Example screenshot](./images/calulateBMI_screenshot.jpg)
+[Example screenshot](images/calulateBMI_screenshot.jpg)
 
 ## Technologies
 
