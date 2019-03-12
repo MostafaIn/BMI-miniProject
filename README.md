@@ -4,11 +4,11 @@
 
 ##Demo
 
-[calculate BMI](https://mostafain.github.io/BMI-miniProject/bmiIndex.html)
+[calculate BMI App](https://mostafain.github.io/BMI-miniProject/bmiIndex.html)
 
 ## Screenshot
 
-[Example screenshot](./images/calculateBMI_screenshot.jpg)
+![Example screenshot](./images/calculateBMI_screenshot.png)
 
 ## Technologies
 
