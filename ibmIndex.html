@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>First JS-miniProject</title>
+    <link rel="stylesheet" href="ibmStyle.css" />
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <img class="bmiLogo" src="./images/bmiIcon.png" alt="bmi logo" />
+        <h1>Calculate your BMI</h1>
+      </div>
+      <div class="info">
+        <div class="mainInfo" id="getInfo">
+          <form action="" id="form">
+            <input type="number" id="weight" placeholder="mass in Kilogram." />
+            <input type="number" id="height" placeholder="height in meter." />
+            <button>calculate</button>
+          </form>
+        </div>
+        <div class="mainInfo" id="someInfo">
+          <ul>
+            <li id="underweight">Underweight: BMI is less than 18.5</li>
+            <li id="normal">Normal weight: BMI is between 18.5 and 24.9</li>
+            <li id="overweight">Overweight: BMI is between 25 and 29.9</li>
+            <li id="obese">Obese: BMI is 30 or more</li>
+          </ul>
+        </div>
+        <div class="mainInfo" id="picInfo"></div>
+      </div>
+      <!---->
+      <div class="bmiResult">
+        <h2>your BMI is <span id="userBmi"></span></h2>
+      </div>
+    </main>
+    <script src="ibmScript.js"></script>
+  </body>
+</html>
