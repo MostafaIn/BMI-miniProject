@@ -10,15 +10,14 @@ main {
   background-color: rgb(131, 190, 238);
   height: auto;
   width: auto;
-  padding: 50px;
+  padding: 40px 20px 5px 20px;
 }
 .title {
   display: flex;
   justify-content: space-evenly;
 }
- h1 {
+h1 {
   color: #177add;
-  float: left;
   font-size: calc(2vw + 10px);
 }
 
@@ -26,11 +25,8 @@ main {
   height: 7vw;
 }
 /* this part is the main.  */
-.info {
+div.info {
   display: flex;
-
-  flex-wrap: wrap;
-  
 }
 
 /* @media only screen and (max-width: 600px){
@@ -47,15 +43,15 @@ main {
   }
 } */
 
-#getInfo {
+div#getInfo {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   flex: 1;
 }
 
 #someInfo {
-  flex: 2;
+  flex: 1;
 }
 #picInfo {
   flex: 1;
@@ -63,30 +59,34 @@ main {
 }
 
 #getInfo input {
-  padding: 12px;
+  padding: 0.5rem;
   border-color: #8fbaf1;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1.2vw;
   text-align: center;
+  width: 60%;
 }
 
 #getInfo button {
-  padding: 8px;
+  margin-top: 10px;
+  padding: 0.8rem;
   background-color: #177add;
   color: white;
   border-color: #8fbaf1;
-  font-size: calc(1.5vw + 10px);
-  border-radius: 8px;
+  font-size: 1.8vw;
+  text-align: center;
+  border-radius: 10px;
+  width: 70%;
 }
 
 #someInfo ul {
-  margin: 20px auto auto 30px;
-  padding: 0;
+  padding: 10px;
 }
 #someInfo ul li {
-  padding: 10px;
+  padding-top: 8px;
   text-align: left;
-  color:white;
+  color: white;
+  font-size: calc(0.5vw + 8px);
 }
 
 .info #picInfo {
@@ -95,7 +95,7 @@ main {
   width: 100%;
 }
 .bmiResult {
-  margin-top: 10px;
+  margin: 10px auto;
   padding: 4px;
   background-color: #177add;
   text-align: center;
