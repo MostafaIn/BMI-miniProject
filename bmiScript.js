@@ -9,9 +9,10 @@ const obese = document.querySelector("#obese");
 const overweight = document.querySelector("#overweight");
 const normal = document.querySelector("#normal");
 const underweight = document.querySelector("#underweight");
+const yourBMI = document.querySelector("#userBmi");
 
 function colorChange() {
-  obese.style.color="white";
+  obese.style.color = "white";
   overweight.style.color = "white";
   normal.style.color = "white";
   underweight.style.color = "white";
@@ -27,6 +28,7 @@ form.addEventListener("submit", function(e) {
   if (bmi >= 30) {
     userResult.innerHTML = bmi;
     obese.style.color = "red";
+    yourBMI.style.color = "red";
     picChange.setAttribute(
       "style",
       "background: url('./images/obese.jpg') no-repeat center/contain; background-color: #fdfdfd; width:100%;"
@@ -34,6 +36,7 @@ form.addEventListener("submit", function(e) {
   } else if (bmi >= 25 && bmi <= 29.9) {
     userResult.innerHTML = bmi;
     overweight.style.color = "#751d21";
+    yourBMI.style.color = "#751d21";
     picChange.setAttribute(
       "style",
       "background: url('./images/overweight.jpg') no-repeat center/contain; background-color: #fdfdfd; width:100%;"
@@ -48,6 +51,7 @@ form.addEventListener("submit", function(e) {
   } else {
     userResult.innerHTML = bmi;
     underweight.style.color = "#e87a14";
+    yourBMI.style.color = "#e87a14";
     picChange.setAttribute(
       "style",
       "background: url('./images/underweight.jpg') no-repeat center/contain; background-color: #fdfdfd; width:100%;"
@@ -59,3 +63,5 @@ form.addEventListener("submit", function(e) {
 
   e.preventDefault();
 });
+
+

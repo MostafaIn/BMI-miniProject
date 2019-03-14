@@ -43,11 +43,16 @@ div.info {
   }
 } */
 
-div#getInfo {
+#getInfo {
   display: flex;
   justify-content: center;
   flex-direction: column;
   flex: 1;
+}
+#getInfo h4{
+  font-size: calc(.7vw + 5px);
+  margin-bottom: 0;
+  color: white;
 }
 
 #someInfo {
@@ -81,9 +86,10 @@ div#getInfo {
 
 #someInfo ul {
   padding: 10px;
+
 }
 #someInfo ul li {
-  padding-top: 8px;
+  padding: calc(1vw + 7px);
   text-align: left;
   color: white;
   font-size: calc(0.5vw + 8px);
@@ -108,4 +114,9 @@ div#getInfo {
 }
 .bmiResult h2 {
   font-size: calc(2vw + 10px);
+}
+#userBmi{
+  /* background-color:white; */
+  border-radius: 100%;
+  padding: 10px;
 }
